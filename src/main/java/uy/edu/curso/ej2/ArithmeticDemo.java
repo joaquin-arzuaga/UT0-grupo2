@@ -1,6 +1,6 @@
 package ej2;
 
-class ArithmeticDemo {
+public class ArithmeticDemo {
 
 
 public int Calculadora(String op1, String op2, String operation)
