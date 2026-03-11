@@ -1,4 +1,4 @@
-package ej1;
+package ej2;
 
 class ArithmeticDemo {
 
