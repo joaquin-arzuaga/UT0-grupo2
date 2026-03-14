@@ -35,6 +35,21 @@ public class Factorial {
         return true;
     }
 
+    public Boolean DeterminarPrimoConWhile(int numero)
+    {
+        int divisor = numero - 1; 
+        while (divisor != 1)
+        {
+            if (numero % divisor == 0)
+            {
+                return false;
+            }
+            divisor --;
+        }
+        return true;
+    }
+
+
     public int SumaParesImpares(int numero)
     {
         boolean result = DeterminarPrimo(numero);
@@ -42,7 +57,7 @@ public class Factorial {
         if (result == true)
         {
             for (int index = 1; index < numero; index++) {
-                if (numero % index == 0)
+                if (index % 2 == 0)
                 {
                     resultado += index;
                 }
@@ -51,12 +66,42 @@ public class Factorial {
         else
         {
             for (int index = 1; index < numero; index++) {
-                if (numero % index != 0)
+                if (index % 2 != 0)
                 {
                     resultado += index;
                 }
         }
         }
     return resultado;
-}
+    }
+
+    public int SumaParesImparesConWhile(int numero)
+    {
+        boolean result = DeterminarPrimoConWhile(numero);
+        int resultado = 0;
+        if (result == true)
+        {
+            while (numero != 0)
+            {
+                if (numero % 2 == 0)
+                {
+                    resultado += numero;
+                }
+                numero--;
+            }
+        }
+        if (result == false)
+        {
+            while (numero != 0)
+            {
+                if (numero % 2 != 0)
+                {
+                    resultado += numero;
+                }
+                numero--;
+                
+            }
+        }
+        return resultado;
+    }
 }

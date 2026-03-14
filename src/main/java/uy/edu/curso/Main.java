@@ -11,9 +11,10 @@ public class Main {
         //Contador ContadorUno = new Contador(0, 0);
         //ContadorUno.menu();
         Factorial Facto = new Factorial();
-        System.out.println(Facto.CalcularFactorial(5));
-        System.out.println(Facto.DeterminarPrimo(1));
-
+        // System.out.println(Facto.CalcularFactorial(5));
+        // System.out.println(Facto.DeterminarPrimo(1));
+        // System.out.println(Facto.SumaParesImpares(8));
+        System.out.println(Facto.SumaParesImparesConWhile(8));
     }
 
 }
