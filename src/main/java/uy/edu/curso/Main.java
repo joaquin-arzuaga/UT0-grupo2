@@ -6,6 +6,7 @@ import ej3.Contador;
 import ej4.Factorial;
 import ej6.Multisuma;
 import ej7.Palindromo;
+import ej8.StringB;
 
 
 public class Main {
@@ -32,6 +33,9 @@ public class Main {
         // Suma.MultArreglos();
         Palindromo pali = new Palindromo();
         pali.ejemplosSimples();
+        StringB hola = new StringB();
+        hola.pequeñosEjemplos();
+        
         
         
     }
