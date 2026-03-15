@@ -48,6 +48,15 @@ public class Palindromo
         String replaceFirst = palabra.replaceFirst("Emilio", "Emi");
         System.out.println(replaceFirst);
 
+        String hannah = "hannah";
+        System.out.println("String: "+ hannah);
+        System.out.println("Longuitud del string: " + hannah.length() );
+        System.out.println("Caracter en el indice 3: "+ hannah.charAt(3));
+
+        System.out.println("Substring de 2-5: "+ hannah.substring(2,5));
+
+
+
 
 
     }
