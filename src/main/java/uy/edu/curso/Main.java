@@ -5,6 +5,7 @@ import ej2.ArithmeticDemo;
 import ej3.Contador;
 import ej4.Factorial;
 import ej6.Multisuma;
+import ej7.Palindromo;
 
 
 public class Main {
@@ -18,7 +19,7 @@ public class Main {
         // System.out.println(Facto.DeterminarPrimo(1));
         // System.out.println(Facto.SumaParesImpares(8));
         // System.out.println(Facto.SumaParesImparesConWhile(8));
-        Multisuma Suma = new Multisuma();
+        // Multisuma Suma = new Multisuma();
         // ArrayList<Integer> lista = new ArrayList<>();
         // lista.add(1);
         // lista.add(2);
@@ -28,7 +29,10 @@ public class Main {
         // listados.add(2);
         // listados.add(3);
         // System.out.println(Suma.MultArreglos(lista, listados));
-        Suma.MultArreglos();
+        // Suma.MultArreglos();
+        Palindromo pali = new Palindromo();
+        pali.ejemplosSimples();
+        
         
     }
 
