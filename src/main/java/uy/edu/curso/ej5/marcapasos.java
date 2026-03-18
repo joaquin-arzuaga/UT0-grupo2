@@ -1,5 +1,7 @@
 package ej5;
 
+import java.util.Objects;
+
 import javax.xml.stream.events.StartDocument;
 
 public class Marcapasos {    
@@ -82,8 +84,12 @@ public class Marcapasos {
 
         Marcapasos otro = (Marcapasos) obj;
 
-        return (idDispositivo.equals(otro.idDispositivo) && codigoFabricante.equals(otro.codigoFabricante));
+        // return (idDispositivo.equals(otro.idDispositivo) && codigoFabricante.equals(otro.codigoFabricante));
+        // Seria mejor usar
+        return (Objects.equals(codigoFabricante, otro.codigoFabricante) && Objects.equals(codigoFabricante, otro.codigoFabricante));
+        // Es mejor usar Objects.equls porque este metodo ya verifica si es nulo
     }
+
 
     /*
     La clase Marcapasos tiene las siguientes variables y cada una ocupa lo siguiente

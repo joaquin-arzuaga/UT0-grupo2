@@ -7,6 +7,9 @@ import ej4.Factorial;
 import ej6.Multisuma;
 import ej7.Palindromo;
 import ej8.StringB;
+import ej9.ProcesadorTexto;
+import ej9.ContadorPalabras;
+
 
 
 public class Main {
@@ -31,13 +34,17 @@ public class Main {
         // listados.add(3);
         // System.out.println(Suma.MultArreglos(lista, listados));
         // Suma.MultArreglos();
-        Palindromo pali = new Palindromo();
-        pali.ejemplosSimples();
-        StringB hola = new StringB();
-        hola.pequeñosEjemplos();
+        // Palindromo pali = new Palindromo();
+        // pali.ejemplosSimples();
+        // StringB hola = new StringB();
+        // hola.pequeñosEjemplos();
         
-        
-        
+        ProcesadorTexto procesadorTexto;
+
+        procesadorTexto =  new ContadorPalabras();
+System.out.println(
+        procesadorTexto.contarPalabras("Hola como estas")
+        );
     }
 
 }
